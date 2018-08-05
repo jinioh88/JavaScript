@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <body>
+        <label for="nick">nickname</label>
+    <input type="text" id="nick"/>
+    <script>
+        var nick = document.getElementById('nick');
+        nick.value="hell";
+
+        nick.onfocus = function () {
+            this.style.background = "orange";
+            this.value = '';
+        }
+    </script>
+    </body>
+</body>
+</html>
