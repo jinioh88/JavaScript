@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제</title>
+</head>
+<body>
+<form name="frm">
+    <p>다음 안에 올바른 값을 입력해</p>
+    <input type="text" name="a1" size="3" value="9"/> +
+    <input type="text" name="a2" size="3" value="3"/> =
+    <input type="text" name="answer" size="3"/>
+    <br><br />
+    <input type="button" onclick="result()" value="확인"/>
+</form>
+
+<script>
+    var frm = document.forms['frm'];
+    function result() {
+        var a1 = document.getElementsByName('a1').value;
+        var a2 = document.getElementsByName('a2').value;
+        var result = a1+a2;
+        console.log(result);
+    }
+</script>
+</body>
+</html>
