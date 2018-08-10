@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>라이트박스</title>
+    <meta name="author" content="by tailofmoon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>light box</h1>
+    <img class="thumb" src="images/img01.jpeg" width="100" onclick="lightbox_open(1)"/>
+    <img class="thumb" src="images/img02.jpeg" width="100" onclick="lightbox_open(2)"/>
+    <img class="thumb" src="images/img03.jpeg" width="100" onclick="lightbox_open(3)"/>
+</header>
+<div id="block"></div>
+<div id="lightbox">
+    <h1>짱구 짱구</h1>
+    <p>귀여운 짱구우..<br><br></p>
+    <figure>
+        <img src="images/img01.jpeg" class="active" alt=""/>
+        <img src="images/img02.jpeg" alt=""/>
+        <img src="images/img03.jpeg" alt=""/>
+    </figure>
+
+    <div class="indicator">
+        <button onclick="change_img(this.innerHTML)">1</button>
+        <button onclick="change_img(this.innerHTML)">2</button>
+        <button onclick="change_img(this.innerHTML)">3</button>
+    </div>
+    <div class="btn-close" onclick="lightbox_close()">X</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
